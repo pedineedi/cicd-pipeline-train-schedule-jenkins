@@ -1,7 +1,7 @@
-pipeline{
+pipeline {
  agent any
- stages{
-    stage 'build'{
+ stages {
+    stage ('build') {
       steps{
         echo ' running jenkins pipeline project'
         sh './gradlew build --no-daemon'
